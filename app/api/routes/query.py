@@ -74,7 +74,8 @@ async def query_documents_stream(request: QueryRequest):
             "data": [
                 {
                     "filename": c["metadata"].get("filename", "unknown"),
-                    "chunk_index": c["metadata"].get("chunk_index", -1)
+                    "chunk_index": c["metadata"].get("chunk_index", -1),
+                    "text": c["text"][:200]
                 }
                 for c in reranked
             ]
