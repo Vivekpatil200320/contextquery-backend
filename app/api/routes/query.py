@@ -13,6 +13,23 @@ from app.core.observability import start_trace_or_span
 router = APIRouter(prefix="/api", tags=["query"])
 
 
+def _narrative_order(chunks: list[dict]) -> list[dict]:
+    """Within each document, sort chunks by chunk_index (narrative order).
+    Cross-document ordering is preserved by the first appearance of each document."""
+    seen: dict[str, int] = {}   # document_id -> insertion order
+    groups: dict[str, list[dict]] = {}
+    for chunk in chunks:
+        doc_id = chunk["metadata"].get("document_id", "")
+        if doc_id not in seen:
+            seen[doc_id] = len(seen)
+            groups[doc_id] = []
+        groups[doc_id].append(chunk)
+    result: list[dict] = []
+    for doc_id in sorted(seen, key=lambda d: seen[d]):
+        result.extend(sorted(groups[doc_id], key=lambda c: c["metadata"].get("chunk_index", 0)))
+    return result
+
+
 @router.post("/query", response_model=QueryResponse)
 async def query_documents(request: QueryRequest):
     with start_trace_or_span(name="rag-query", as_type="span", input={"question": request.question}) as trace:
@@ -24,7 +41,11 @@ async def query_documents(request: QueryRequest):
                 as_type="retriever",
                 input={"question": request.question, "top_k": request.top_k}
             ) as retrieval_span:
-                retrieved = retrieve_chunks(request.question, top_k=request.top_k)
+                retrieved = retrieve_chunks(
+                    request.question,
+                    top_k=request.top_k,
+                    mode=request.retrieval_mode,
+                )
                 retrieval_ms = round((time.perf_counter() - t0) * 1000)
                 retrieval_span.update(
                     output={"chunks_retrieved": len(retrieved["documents"])},
@@ -60,6 +81,8 @@ async def query_documents(request: QueryRequest):
                     },
                     metadata={"latency_ms": rerank_ms}
                 )
+
+            reranked = _narrative_order(reranked)
 
             # Generation span
             t0 = time.perf_counter()
@@ -103,19 +126,23 @@ async def query_documents(request: QueryRequest):
 
 @router.post("/query/stream")
 async def query_documents_stream(request: QueryRequest):
-    retrieved = retrieve_chunks(request.question, top_k=request.top_k)
+    retrieved = retrieve_chunks(
+        request.question,
+        top_k=request.top_k,
+        mode=request.retrieval_mode,
+    )
 
     if not retrieved["documents"]:
         async def empty_gen():
             yield "No documents have been ingested yet — upload a document before asking questions."
         return StreamingResponse(empty_gen(), media_type="text/plain")
 
-    reranked = rerank_chunks(
+    reranked = _narrative_order(rerank_chunks(
         request.question,
         retrieved["documents"],
         retrieved["metadatas"],
         top_n=request.rerank_top_n
-    )
+    ))
 
     async def event_generator():
         with start_trace_or_span(name="rag-query-stream", as_type="span", input={"question": request.question}) as trace:

@@ -22,6 +22,15 @@ app.include_router(ingest.router)
 app.include_router(query.router)
 app.include_router(documents.router)
 
+
+@app.on_event("startup")
+async def _startup() -> None:
+    from app.services.bm25_service import build_bm25_index
+    try:
+        build_bm25_index()
+    except Exception:
+        pass  # non-fatal: index builds lazily on first hybrid request
+
 @app.exception_handler(RequestValidationError)
 async def validation_exception_handler(request: Request, exc: RequestValidationError):
     return JSONResponse(

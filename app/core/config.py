@@ -13,6 +13,9 @@ class Settings(BaseSettings):
     chroma_database: str = "contextquery"
     chroma_collection: str = "documents"
 
+    # Retrieval mode: "semantic" (default) or "hybrid" (BM25 + semantic via RRF)
+    retrieval_mode: str = "semantic"
+
     # Langfuse
     langfuse_public_key: str = ""
     langfuse_secret_key: str = ""
