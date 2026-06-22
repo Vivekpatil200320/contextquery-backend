@@ -13,6 +13,11 @@ class Settings(BaseSettings):
     chroma_database: str = "contextquery"
     chroma_collection: str = "documents"
 
+    # Langfuse
+    langfuse_public_key: str = ""
+    langfuse_secret_key: str = ""
+    langfuse_host: str = "https://cloud.langfuse.com"
+
     model_config = SettingsConfigDict(env_file=".env")
 
 settings = Settings() # type: ignore
