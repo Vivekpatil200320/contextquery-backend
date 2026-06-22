@@ -1,0 +1,306 @@
+{
+  "summary": {
+    "retrieval_precision": 0.0,
+    "faithfulness_rate": 0.625,
+    "avg_latency_ms": 2862.625,
+    "total_cases": 8
+  },
+  "results": [
+    {
+      "question": "What happened to the hummingbird Dikran found?",
+      "expected_source": "Theme 7 Surviving the Elements (1).docx",
+      "expected_keyword": "honey",
+      "retrieval_hit": false,
+      "faithfulness_pass": false,
+      "answer": "I do not have enough information to answer the question.",
+      "sources": [
+        {
+          "filename": "Vivek_Patil_Resume.docx",
+          "chunk_index": 2,
+          "text": "CORE COMPETENCIES\n\nFull-Stack / Web:  Next.js 15 (App Router, RSC), React.js, Node.js, Express, TypeScript, Tailwind CSS, Shadcn/UI, MERN Stack\n\nDatabase & Security:  PostgreSQL, Supabase, Row-Level S",
+          "relevance_score": -22.75
+        },
+        {
+          "filename": "Vivek_Patil_Resume.docx",
+          "chunk_index": 11,
+          "text": "CERTIFICATIONS\n\nGoogle \u2014 Build Real World AI Applications with Gemini and Imagen   \u2022   Google \u2014 Prompt Design in Vertex AI   \u2022   AWS \u2014 Cloud Technical Essentials   \u2022   Python Data Structures, Universi",
+          "relevance_score": -22.75
+        },
+        {
+          "filename": "Vivek_Patil_Resume.docx",
+          "chunk_index": 5,
+          "text": "Improved frontend load performance by 20% (Lighthouse-verified) by rebuilding key application views in Next.js as part of end-to-end production deployment.\n\nEnabled real-time data consistency across m",
+          "relevance_score": -25.03125
+        },
+        {
+          "filename": "Vivek_Patil_Resume.docx",
+          "chunk_index": 9,
+          "text": "Delivered context-aware, reasoning-driven conversations with persistent long-term memory by building a production-deployed real-time chat platform on Gemini API and MongoDB, with Socket.io messaging s",
+          "relevance_score": -25.03125
+        }
+      ],
+      "chunks_retrieved": 10,
+      "chunks_used": 4,
+      "latency_ms": 6739
+    },
+    {
+      "question": "What does Dikran do with the hummingbird at the end?",
+      "expected_source": "Theme 7 Surviving the Elements (1).docx",
+      "expected_keyword": "window",
+      "retrieval_hit": false,
+      "faithfulness_pass": false,
+      "answer": "I cannot find any information about Dikran or a hummingbird in the provided context.",
+      "sources": [
+        {
+          "filename": "Vivek_Patil_Resume.docx",
+          "chunk_index": 9,
+          "text": "Delivered context-aware, reasoning-driven conversations with persistent long-term memory by building a production-deployed real-time chat platform on Gemini API and MongoDB, with Socket.io messaging s",
+          "relevance_score": -22.75
+        },
+        {
+          "filename": "Vivek_Patil_Resume.docx",
+          "chunk_index": 2,
+          "text": "CORE COMPETENCIES\n\nFull-Stack / Web:  Next.js 15 (App Router, RSC), React.js, Node.js, Express, TypeScript, Tailwind CSS, Shadcn/UI, MERN Stack\n\nDatabase & Security:  PostgreSQL, Supabase, Row-Level S",
+          "relevance_score": -22.75
+        },
+        {
+          "filename": "Vivek_Patil_Resume.docx",
+          "chunk_index": 11,
+          "text": "CERTIFICATIONS\n\nGoogle \u2014 Build Real World AI Applications with Gemini and Imagen   \u2022   Google \u2014 Prompt Design in Vertex AI   \u2022   AWS \u2014 Cloud Technical Essentials   \u2022   Python Data Structures, Universi",
+          "relevance_score": -22.75
+        },
+        {
+          "filename": "Vivek_Patil_Resume.docx",
+          "chunk_index": 0,
+          "text": "VIVEK PATIL\n\nAI-Integrated Full Stack Engineer\n\nVadodara, Gujarat, India  |  vivekpatil200320@gmail.com  |  +91-6358733772  |  GitHub  |  LinkedIn",
+          "relevance_score": -25.03125
+        }
+      ],
+      "chunks_retrieved": 10,
+      "chunks_used": 4,
+      "latency_ms": 2861
+    },
+    {
+      "question": "What is VDev Automations?",
+      "expected_source": "linkedin-proflie-info.pdf",
+      "expected_keyword": "lead",
+      "retrieval_hit": false,
+      "faithfulness_pass": true,
+      "answer": "VDev Automations is the company where Vivek Patil is the Founder & Lead AI Architect, as of April 2026.",
+      "sources": [
+        {
+          "filename": "Vivek_Patil_Resume.docx",
+          "chunk_index": 3,
+          "text": "PROFESSIONAL EXPERIENCE\n\nFounder & Lead AI Architect  |  VDev Automations\tApr 2026 \u2013 Present\n\nDelivered production-grade AI lead-conversion infrastructure across 4 countries (UAE, US, UK, Australia) a",
+          "relevance_score": 7.39453125
+        },
+        {
+          "filename": "Vivek_Patil_Resume.docx",
+          "chunk_index": 0,
+          "text": "VIVEK PATIL\n\nAI-Integrated Full Stack Engineer\n\nVadodara, Gujarat, India  |  vivekpatil200320@gmail.com  |  +91-6358733772  |  GitHub  |  LinkedIn",
+          "relevance_score": -13.65625
+        },
+        {
+          "filename": "Vivek_Patil_Resume.docx",
+          "chunk_index": 6,
+          "text": "TECHNICAL PROJECTS\n\nALL AUTOZ \u2014 Multi-Tenant Fleet Rental ERP  |  Next.js 15, Supabase/PostgreSQL, Clerk, Tailwind\n\nEnforced complete per-client data isolation across 2 tenant accounts by architecting",
+          "relevance_score": -14.7890625
+        },
+        {
+          "filename": "Vivek_Patil_Resume.docx",
+          "chunk_index": 2,
+          "text": "CORE COMPETENCIES\n\nFull-Stack / Web:  Next.js 15 (App Router, RSC), React.js, Node.js, Express, TypeScript, Tailwind CSS, Shadcn/UI, MERN Stack\n\nDatabase & Security:  PostgreSQL, Supabase, Row-Level S",
+          "relevance_score": -14.7890625
+        }
+      ],
+      "chunks_retrieved": 10,
+      "chunks_used": 4,
+      "latency_ms": 2108
+    },
+    {
+      "question": "What is Vivek's role at VDev Automations?",
+      "expected_source": "linkedin-proflie-info.pdf",
+      "expected_keyword": "founder",
+      "retrieval_hit": false,
+      "faithfulness_pass": true,
+      "answer": "Founder & Lead AI Architect at VDev Automations.",
+      "sources": [
+        {
+          "filename": "Vivek_Patil_Resume.docx",
+          "chunk_index": 3,
+          "text": "PROFESSIONAL EXPERIENCE\n\nFounder & Lead AI Architect  |  VDev Automations\tApr 2026 \u2013 Present\n\nDelivered production-grade AI lead-conversion infrastructure across 4 countries (UAE, US, UK, Australia) a",
+          "relevance_score": 6.2578125
+        },
+        {
+          "filename": "Vivek_Patil_Resume.docx",
+          "chunk_index": 0,
+          "text": "VIVEK PATIL\n\nAI-Integrated Full Stack Engineer\n\nVadodara, Gujarat, India  |  vivekpatil200320@gmail.com  |  +91-6358733772  |  GitHub  |  LinkedIn",
+          "relevance_score": -3.697265625
+        },
+        {
+          "filename": "Vivek_Patil_Resume.docx",
+          "chunk_index": 1,
+          "text": "AI-Integrated Full Stack Engineer who architects multi-tenant Next.js/Supabase systems and autonomous LangGraph agents, cutting client response times from hours to under 2 minutes in production. Found",
+          "relevance_score": -11.375
+        },
+        {
+          "filename": "Vivek_Patil_Resume.docx",
+          "chunk_index": 4,
+          "text": "Cut client lead-response time from hours to under 2 minutes by engineering autonomous 24/7 AI agents for multi-channel (SMS, WhatsApp, email) qualification and calendar booking, directly improving lea",
+          "relevance_score": -11.375
+        }
+      ],
+      "chunks_retrieved": 10,
+      "chunks_used": 4,
+      "latency_ms": 1827
+    },
+    {
+      "question": "What is Vivek's educational background?",
+      "expected_source": "Vivek_Patil_Resume_HighLevel.pdf",
+      "expected_keyword": "MCA",
+      "retrieval_hit": false,
+      "faithfulness_pass": false,
+      "answer": "Vivek's educational background includes:\n\n- Master of Computer Applications (Data Science) from MIT-ADT University (2024 - 2026) with a CGPA of 7.9.\n- Bachelor of Computer Applications (AI Specialization) from Parul University (2021 - 2024) with a CGPA of 8.3.",
+      "sources": [
+        {
+          "filename": "Vivek_Patil_Resume.docx",
+          "chunk_index": 0,
+          "text": "VIVEK PATIL\n\nAI-Integrated Full Stack Engineer\n\nVadodara, Gujarat, India  |  vivekpatil200320@gmail.com  |  +91-6358733772  |  GitHub  |  LinkedIn",
+          "relevance_score": -1.421875
+        },
+        {
+          "filename": "Vivek_Patil_Resume.docx",
+          "chunk_index": 10,
+          "text": "Reduced integration overhead and eliminated schema-mapping inconsistencies by architecting a modular MCP-based service standardizing data exchange between local LLMs and external enterprise APIs.\n\nEDU",
+          "relevance_score": -4.265625
+        },
+        {
+          "filename": "Vivek_Patil_Resume.docx",
+          "chunk_index": 1,
+          "text": "AI-Integrated Full Stack Engineer who architects multi-tenant Next.js/Supabase systems and autonomous LangGraph agents, cutting client response times from hours to under 2 minutes in production. Found",
+          "relevance_score": -6.2578125
+        },
+        {
+          "filename": "Vivek_Patil_Resume.docx",
+          "chunk_index": 11,
+          "text": "CERTIFICATIONS\n\nGoogle \u2014 Build Real World AI Applications with Gemini and Imagen   \u2022   Google \u2014 Prompt Design in Vertex AI   \u2022   AWS \u2014 Cloud Technical Essentials   \u2022   Python Data Structures, Universi",
+          "relevance_score": -9.1015625
+        }
+      ],
+      "chunks_retrieved": 10,
+      "chunks_used": 4,
+      "latency_ms": 2783
+    },
+    {
+      "question": "What programming languages does Vivek know?",
+      "expected_source": "Vivek_Patil_Resume_HighLevel.pdf",
+      "expected_keyword": "Python",
+      "retrieval_hit": false,
+      "faithfulness_pass": true,
+      "answer": "Vivek knows the following programming languages:\n\n1. Python\n2. JavaScript (ES6+)\n3. SQL\n4. Java\n5. PHP",
+      "sources": [
+        {
+          "filename": "Vivek_Patil_Resume.docx",
+          "chunk_index": 0,
+          "text": "VIVEK PATIL\n\nAI-Integrated Full Stack Engineer\n\nVadodara, Gujarat, India  |  vivekpatil200320@gmail.com  |  +91-6358733772  |  GitHub  |  LinkedIn",
+          "relevance_score": -0.7109375
+        },
+        {
+          "filename": "Vivek_Patil_Resume.docx",
+          "chunk_index": 2,
+          "text": "CORE COMPETENCIES\n\nFull-Stack / Web:  Next.js 15 (App Router, RSC), React.js, Node.js, Express, TypeScript, Tailwind CSS, Shadcn/UI, MERN Stack\n\nDatabase & Security:  PostgreSQL, Supabase, Row-Level S",
+          "relevance_score": -5.6875
+        },
+        {
+          "filename": "Vivek_Patil_Resume.docx",
+          "chunk_index": 6,
+          "text": "TECHNICAL PROJECTS\n\nALL AUTOZ \u2014 Multi-Tenant Fleet Rental ERP  |  Next.js 15, Supabase/PostgreSQL, Clerk, Tailwind\n\nEnforced complete per-client data isolation across 2 tenant accounts by architecting",
+          "relevance_score": -10.2421875
+        },
+        {
+          "filename": "Vivek_Patil_Resume.docx",
+          "chunk_index": 4,
+          "text": "Cut client lead-response time from hours to under 2 minutes by engineering autonomous 24/7 AI agents for multi-channel (SMS, WhatsApp, email) qualification and calendar booking, directly improving lea",
+          "relevance_score": -11.375
+        }
+      ],
+      "chunks_retrieved": 10,
+      "chunks_used": 4,
+      "latency_ms": 2475
+    },
+    {
+      "question": "What is the capital of France?",
+      "expected_source": null,
+      "expected_keyword": "not",
+      "retrieval_hit": true,
+      "faithfulness_pass": true,
+      "answer": "I do not have enough information in the provided context to answer the question about the capital of France.",
+      "sources": [
+        {
+          "filename": "Vivek_Patil_Resume.docx",
+          "chunk_index": 9,
+          "text": "Delivered context-aware, reasoning-driven conversations with persistent long-term memory by building a production-deployed real-time chat platform on Gemini API and MongoDB, with Socket.io messaging s",
+          "relevance_score": -13.65625
+        },
+        {
+          "filename": "Vivek_Patil_Resume.docx",
+          "chunk_index": 3,
+          "text": "PROFESSIONAL EXPERIENCE\n\nFounder & Lead AI Architect  |  VDev Automations\tApr 2026 \u2013 Present\n\nDelivered production-grade AI lead-conversion infrastructure across 4 countries (UAE, US, UK, Australia) a",
+          "relevance_score": -13.65625
+        },
+        {
+          "filename": "Vivek_Patil_Resume.docx",
+          "chunk_index": 1,
+          "text": "AI-Integrated Full Stack Engineer who architects multi-tenant Next.js/Supabase systems and autonomous LangGraph agents, cutting client response times from hours to under 2 minutes in production. Found",
+          "relevance_score": -13.65625
+        },
+        {
+          "filename": "Vivek_Patil_Resume.docx",
+          "chunk_index": 2,
+          "text": "CORE COMPETENCIES\n\nFull-Stack / Web:  Next.js 15 (App Router, RSC), React.js, Node.js, Express, TypeScript, Tailwind CSS, Shadcn/UI, MERN Stack\n\nDatabase & Security:  PostgreSQL, Supabase, Row-Level S",
+          "relevance_score": -13.65625
+        }
+      ],
+      "chunks_retrieved": 10,
+      "chunks_used": 4,
+      "latency_ms": 2135
+    },
+    {
+      "question": "Who wrote the Bible?",
+      "expected_source": null,
+      "expected_keyword": "not",
+      "retrieval_hit": true,
+      "faithfulness_pass": true,
+      "answer": "I do not have enough information to answer the question.",
+      "sources": [
+        {
+          "filename": "Vivek_Patil_Resume.docx",
+          "chunk_index": 11,
+          "text": "CERTIFICATIONS\n\nGoogle \u2014 Build Real World AI Applications with Gemini and Imagen   \u2022   Google \u2014 Prompt Design in Vertex AI   \u2022   AWS \u2014 Cloud Technical Essentials   \u2022   Python Data Structures, Universi",
+          "relevance_score": -15.9296875
+        },
+        {
+          "filename": "Vivek_Patil_Resume.docx",
+          "chunk_index": 2,
+          "text": "CORE COMPETENCIES\n\nFull-Stack / Web:  Next.js 15 (App Router, RSC), React.js, Node.js, Express, TypeScript, Tailwind CSS, Shadcn/UI, MERN Stack\n\nDatabase & Security:  PostgreSQL, Supabase, Row-Level S",
+          "relevance_score": -15.9296875
+        },
+        {
+          "filename": "Vivek_Patil_Resume.docx",
+          "chunk_index": 4,
+          "text": "Cut client lead-response time from hours to under 2 minutes by engineering autonomous 24/7 AI agents for multi-channel (SMS, WhatsApp, email) qualification and calendar booking, directly improving lea",
+          "relevance_score": -17.0625
+        },
+        {
+          "filename": "Vivek_Patil_Resume.docx",
+          "chunk_index": 3,
+          "text": "PROFESSIONAL EXPERIENCE\n\nFounder & Lead AI Architect  |  VDev Automations\tApr 2026 \u2013 Present\n\nDelivered production-grade AI lead-conversion infrastructure across 4 countries (UAE, US, UK, Australia) a",
+          "relevance_score": -17.0625
+        }
+      ],
+      "chunks_retrieved": 10,
+      "chunks_used": 4,
+      "latency_ms": 1973
+    }
+  ]
+}
